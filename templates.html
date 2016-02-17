@@ -1,0 +1,27 @@
+<template name="alertsContainer">
+  <div class="alerts-container">
+    {{#each items}}
+      {{> alertItem}}
+    {{/each}}
+  </div>
+</template>
+
+<template name="alertItem">
+  <div class="alert-type-{{type}} {{#if icon}}alert-with-icon{{/if}}">
+    <div class="alert-inner">
+      <a href="#" class="close-alert"><i class="fa fa-times"></i></a>
+
+      <div class="alert-icon-box">
+        {{#if icon}}
+          <i class="fa fa-{{icon}}"></i>
+        {{/if}}
+      </div>
+
+      <div class="alert-title">{{title}}</div>
+
+      <div class="alert-content">
+        {{message}}
+      </div>
+    </div>
+  </div>
+</template>
