@@ -22,19 +22,19 @@ Alerts = {
   },
 
   success: function(message, title) {
-    Alerts.add({title: title, message: message, icon: 'check', type: 'success'});
+    return Alerts.add({title: title, message: message, icon: 'check', type: 'success'});
   },
 
   error: function(message, title) {
-    Alerts.add({title: title, message: message, icon: 'times-circle', type: 'error'});
+    return Alerts.add({title: title, message: message, icon: 'times-circle', type: 'error'});
   },
 
   warning: function(message, title) {
-    Alerts.add({title: title, message: message, icon: 'warning', type: 'warning'});
+    return Alerts.add({title: title, message: message, icon: 'warning', type: 'warning'});
   },
 
   info: function(message, title) {
-    Alerts.add({title: title, message: message, icon: 'commenting', type: 'info'});
+    return Alerts.add({title: title, message: message, icon: 'commenting', type: 'info'});
   }
 
 };
