@@ -1,7 +1,7 @@
 Package.describe({
-  name   : "vlad:alerts",
-  summary: "A pattern to display application alerts system for display",
-  version: "0.1.0",
+  name   : 'valodya:alerts',
+  summary: 'A pattern to display application alerts system for display',
+  version: '0.1.0',
   git    : 'https://github.com/Valodya/meteor-alerts.git'
 });
 
@@ -15,7 +15,7 @@ Package.onUse(function(api, where) {
     'mongo-livedata',
     'templating',
     'less',
-    'fortawesome:fontawesome'
+    'fortawesome:fontawesome@4.5.0'
   ], 'client');
 
   api.addFiles([
@@ -31,7 +31,7 @@ Package.onUse(function(api, where) {
 });
 
 Package.onTest(function(api) {
-  api.use('vlad:alerts', 'client');
+  api.use('valodya:alerts', 'client');
   api.use(['tinytest', 'test-helpers', 'ui', 'templating'], 'client');
 
   api.addFiles('tests.js', 'client');
